@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventes - RoyalMotors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>🚗 RoyalMotors</h1>
+        <a href="index.html">Accueil</a>
+        <a href="voitures.html">Voitures</a>
+        <a href="clients.html">Clients</a>
+        <a href="ventes.html">Ventes</a>
+        <a href="categories.html">Catégories</a>
+    </nav>
+
+    <main>
+        <h2>💰 Gestion des Ventes</h2>
+
+        <form id="form-vente">
+            <input type="number" id="voiture_id" placeholder="ID Voiture" required>
+            <input type="number" id="client_id" placeholder="ID Client" required>
+            <input type="date" id="date_vente" required>
+            <input type="number" id="prix_vente" placeholder="Prix de vente" required>
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ID Voiture</th>
+                    <th>ID Client</th>
+                    <th>Date</th>
+                    <th>Prix</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableau-ventes">
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/ventes.js"></script>
+</body>
+</html>
