@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Catégories - RoyalMotors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <nav>
+        <h1>🚗 RoyalMotors</h1>
+        <a href="index.html">Accueil</a>
+        <a href="voitures.html">Voitures</a>
+        <a href="clients.html">Clients</a>
+        <a href="ventes.html">Ventes</a>
+        <a href="categories.html">Catégories</a>
+    </nav>
+
+    <main>
+        <h2>📂 Gestion des Catégories</h2>
+
+        <form id="form-categorie">
+            <input type="text" id="nom" placeholder="Nom de la catégorie" required>
+            <input type="text" id="description" placeholder="Description">
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableau-categories">
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html>
