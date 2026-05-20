@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Voitures - RoyalMotors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>🚗 RoyalMotors</h1>
+        <a href="index.html">Accueil</a>
+        <a href="voitures.html">Voitures</a>
+        <a href="clients.html">Clients</a>
+        <a href="ventes.html">Ventes</a>
+        <a href="categories.html">Catégories</a>
+    </nav>
+
+    <main>
+        <h2>🚗 Gestion des Voitures</h2>
+
+        <form id="form-voiture">
+            <input type="text" id="marque" placeholder="Marque" required>
+            <input type="text" id="modele" placeholder="Modèle" required>
+            <input type="number" id="annee" placeholder="Année" required>
+            <input type="number" id="prix" placeholder="Prix" required>
+            <select id="statut">
+                <option value="Disponible">Disponible</option>
+                <option value="Vendu">Vendu</option>
+            </select>
+            <input type="number" id="categorie_id" placeholder="ID Catégorie" required>
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marque</th>
+                    <th>Modèle</th>
+                    <th>Année</th>
+                    <th>Prix</th>
+                    <th>Statut</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableau-voitures">
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/voitures.js"></script>
+</body>
+</html>
